@@ -25,9 +25,9 @@ function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
-client.on('message', function(message) {
-    if (message.content === '!team') {
-        client.sendMessage(message, "Hello!", {tts:true}); 
+client.on('message', message => {
+    if (message.content === 'ping') {
+        message.reply('pong');
     }
 });
 
