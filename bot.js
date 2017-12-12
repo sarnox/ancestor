@@ -27,7 +27,7 @@ function rng(low, high) {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong');
+        client.sendMessage('pong');
     }
 });
 
