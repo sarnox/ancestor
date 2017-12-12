@@ -25,9 +25,17 @@ function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
-client.on('message', message => {
+var textArray = [
+    'song1.ogg',
+    'song2.ogg'
+];
+var randomNumber = Math.floor(Math.random()*textArray.length);
+
+
+
+client.on('message', function(message, channel) {
     if (message.content === '!team') {
-        message.reply('Our HotS team, once so well regarded, is now barely whispered aloud by the bronzers.',{tts:true});
+        message.reply('test');
     }
 });
 
