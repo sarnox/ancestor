@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 var narratorstr = [
-    'Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.',
+    'Our HotS team, once so well regarded, is now barely whispered aloud by the bronzers.',
     'I remember days when the team lived, and laughter could be heard from the teamspeak.',
     'Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.',
     'Women and men; bronzies and silvers; fools and flamers. All will find their way to us now that the queue is clear.',
@@ -26,8 +26,8 @@ function rng(low, high) {
 };
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-        client.sendMessage('pong');
+    if (message.content === '!team') {
+        message.reply('Our HotS team, once so well regarded, is now barely whispered aloud by the bronzers.',{tts:true});
     }
 });
 
