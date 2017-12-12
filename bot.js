@@ -25,17 +25,11 @@ function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
-var textArray = [
-    'song1.ogg',
-    'song2.ogg'
-];
-var randomNumber = Math.floor(Math.random()*textArray.length);
-
-
 
 client.on('message', function(message, channel) {
     if (message.content === '!team') {
-        message.reply('test');
+        var randomNumber = Math.floor(Math.random()*narratorstr.length);
+        message.sendTTSMessage(channel, narratorstr[randomNumber]);
     }
 });
 
