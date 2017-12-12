@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!team') {
-        message.send(':ancestor01: Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.', {tts:true});
+        message.reply(':ancestor01: Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.', {tts:true});
     }
 });
 
