@@ -29,9 +29,8 @@ function rng(low, high) {
 client.on('message', function(message) {
     if (message.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        client.sendTTSMessage(message.channel, narratorstr[randomNumber]);
+        message.reply(narratorstr[randomNumber],{tts:true});
         
-});
     }
 });
 
