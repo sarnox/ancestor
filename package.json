@@ -1,0 +1,11 @@
+{
+  "name": "Ancestor",
+  "version": "1.0.0",
+  "description": "The soul of the team",
+  "main": "bot.js",
+  "author": "Nox",
+  "dependencies": {
+    "discord.io": "^2.5.3",
+    "winston": "^2.4.0"
+  }
+}
