@@ -26,10 +26,12 @@ function rng(low, high) {
 };
 
 
-client.on('message', function(message, channel) {
+client.on('message', function(message) {
     if (message.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        message.sendTTSMessage(channel, narratorstr[randomNumber]);
+        client.sendTTSMessage(message.channel, narratorstr[randomNumber]);
+        
+});
     }
 });
 
