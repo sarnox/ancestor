@@ -8,7 +8,6 @@ client.on('ready', () => {
 var narratorstr = [
     'Our HotS team, once so well regarded, is now barely whispered aloud by the bronzers.',
     'I remember days when the team lived, and laughter could be heard from the teamspeak.',
-    'Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.',
     'Women and men; bronzies and silvers; fools and flamers. All will find their way to us now that the queue is clear.',
     'The cobwebs have been dusted, the channels set straight. The teamspeak calls for its team, but there is no answer.',
     'Once, our HotS team was the envy of team league...',
@@ -18,7 +17,6 @@ var narratorstr = [
     'Curiosity, interest and overwatch heroes -- mile markers on my road to damnation.',
     "In truth I cannot tell how much time has passed since I've been queuing for team league.",
     'I can still see their angry faces as they stormed the skype group, but the team was dead before they found me, and the meems were on their way.',
-    'Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.'
     ];
 
 function rng(low, high) {
