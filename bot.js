@@ -27,8 +27,10 @@ function rng(low, high) {
 client.on('message', function(message) {
     if (message.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        message.reply(narratorstr[randomNumber],{tts:true});
-        
+        message.reply(narratorstr[randomNumber],{tts:true});  
+    }
+    if (message.content === '!pasta') {
+        message.reply("This guy's pasta is CRAZY! My rigatoni can't win against a linguini like that. He NEEDED that alfredo to win. He meatballed the only marinara that could beat me. He had the perfect fettucini. There was nothing I could cook. I cooked that al dente!");
     }
 });
 
