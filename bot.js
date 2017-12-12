@@ -7,10 +7,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!team') {
-        message.tts(':ancestor01: Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.');
-        message.channel.send("A text to speech message from a bot.", {
- tts: true
-})
+        message.send(':ancestor01: Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.', {tts:true});
     }
 });
 
