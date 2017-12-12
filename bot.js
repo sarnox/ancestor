@@ -21,11 +21,11 @@ var narratorstr = [
     'Our HotS team, once so well regarded, is now barely whispered aloud by decent folk.'
     ];
 
-function rng (low, high) {
+function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
-client.on('message', message => {
+client.on('message', function(message) {
     if (message.content === '!team') {
         client.sendMessage(message, "Hello!", {tts:true}); 
     }
