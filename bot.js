@@ -42,6 +42,18 @@ client.on('message', function(message) {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
         message.reply(pastaarray[randomNumber],{tts:true}); 
     }
+    if (message.content === '!bronze') {
+        message.reply("Some players should have never installed. You are doing just work, stomping them." 
+                      ,{tts:true});
+    }
+    if (message.content === '!shitters') {
+        message.reply("Gatekeeping the shitters is an endless battle, but one that must be fought." 
+                      ,{tts:true});
+    }
+    if (message.content === '!pug') {
+        message.reply("Bronzers may indeed stalk these queues, but yonder – a pug playing support." 
+                      ,{tts:true});
+    }
 });
 
 client.login(process.env.BOT_TOKEN);
