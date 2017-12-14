@@ -54,7 +54,7 @@ client.on('message', function(message) {
         message.reply("Bronzers may indeed stalk these queues, but yonder – a pug playing support." 
                       ,{tts:true});
     }
-    if (message.content === '!pug') {
+    if (message.content === '!bug') {
         message.reply("Such queue bugs are unsurprising -- this matchmaking predates even the earliest beta testers." 
                       ,{tts:true});
     }
