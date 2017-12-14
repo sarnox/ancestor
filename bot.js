@@ -23,6 +23,14 @@ function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
+var pastaarray = [
+    "This guy's pasta is CRAZY!",
+    "My rigatoni can't win against a linguini like that.",
+    "He NEEDED that alfredo to win. He meatballed the only marinara that could beat me.",
+    "He had the perfect fettucini.",
+    "There was nothing I could cook.",
+    "I cooked that al dente!"
+    ];
 
 client.on('message', function(message) {
     if (message.content === '!team') {
@@ -30,7 +38,8 @@ client.on('message', function(message) {
         message.reply(narratorstr[randomNumber],{tts:true});  
     }
     if (message.content === '!pasta') {
-        message.reply("This guy's pasta is CRAZY! My rigatoni can't win against a linguini like that. He NEEDED that alfredo to win. He meatballed the only marinara that could beat me. He had the perfect fettucini. There was nothing I could cook. I cooked that al dente!");
+        var randomNumber = Math.floor(Math.random()*pastaarray.length);
+        message.reply(pastaarray[randomNumber],{tts:true}); 
     }
 });
 
