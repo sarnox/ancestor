@@ -26,7 +26,8 @@ function rng(low, high) {
 var pastaarray = [
     "This guy's pasta is CRAZY!",
     "My rigatoni can't win against a linguini like that.",
-    "He NEEDED that alfredo to win. He meatballed the only marinara that could beat me.",
+    "He NEEDED that alfredo to win.",
+    "He meatballed the only marinara that could beat me.",
     "He had the perfect fettucini.",
     "There was nothing I could cook.",
     "I cooked that al dente!"
