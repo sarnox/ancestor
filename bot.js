@@ -63,7 +63,7 @@ client.on('message', function(message) {
                       ,{tts:false});
     }
     if (message.content === '!QM') {
-        message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous clutching shadows of... the darkest quickmatch." 
+        message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
     }
     if (message.content === '!black') {
