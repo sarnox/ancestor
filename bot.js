@@ -66,6 +66,12 @@ client.on('message', function(message) {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous clutching shadows of... the darkest quick match." 
                       ,{tts:true});
     }
+    if (message.content === '!black') {
+        message.reply("see !Kunryul");
+    }
+    if (message.content === '!Kunryul') {
+        message.reply("see !black");
+    }                  
     
 });
 
