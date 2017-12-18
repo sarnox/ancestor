@@ -71,7 +71,10 @@ client.on('message', function(message) {
     }
     if (message.content === '!Kunryul') {
         message.reply("see !black");
-    }                  
+    }
+    if (message.content === '!HL') {
+        message.reply("Hero league is a lot like trench warfare -- you don't want to be there.");
+    }
     
 });
 
