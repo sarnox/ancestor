@@ -74,7 +74,7 @@ client.on('message', message => {
                       ,{tts:true});
     }
     if (command === 'hanzo') {
-        message.reply("https://i.imgur.com/UwpqyMh.mp4" 
+        message.reply("", {file:"https://i.imgur.com/UwpqyMh.mp4"}
                       ,{tts:false});
     }
     if (command === 'qm') {
@@ -89,6 +89,10 @@ client.on('message', message => {
     }
     if (command === 'hl') {
         message.reply("Hero league is a lot like trench warfare -- you don't want to be there."
+                      ,{tts:true});
+    }
+    if (command === 'valeera') {
+        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence."
                       ,{tts:true});
     }
     
