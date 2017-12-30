@@ -74,7 +74,19 @@ client.on('message', message => {
                       ,{tts:true});
     }
     if (command === 'hanzo') {
-        message.reply("", {file:"https://i.imgur.com/UwpqyMh.mp4"}
+        message.reply("https://i.imgur.com/UwpqyMh.mp4"
+                      ,{tts:false});
+    }
+    if (command === 'bdo') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
+                      ,{tts:false});
+    }
+    if (command === 'triggered') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
+                      ,{tts:false});
+    }
+    if (command === 'wtf') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500239793651714/79175_original.jpg" 
                       ,{tts:false});
     }
     if (command === 'qm') {
