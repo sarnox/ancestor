@@ -42,16 +42,11 @@ client.on('message', message => {
   
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-    
+
     if(command === "say") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
-    }
-    
-    if(command === "ping") {
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
     
     if (command === 'team') {
@@ -82,18 +77,6 @@ client.on('message', message => {
         message.reply("https://i.imgur.com/UwpqyMh.mp4" 
                       ,{tts:false});
     }
-    if (command === 'bdo') {
-        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
-                      ,{tts:false});
-    }
-    if (command === 'triggered') {
-        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
-                      ,{tts:false});
-    }
-    if (command === 'wtf') {
-        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500239793651714/79175_original.jpg" 
-                      ,{tts:false});
-    }
     if (command === 'qm') {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
@@ -106,10 +89,6 @@ client.on('message', message => {
     }
     if (command === 'hl') {
         message.reply("Hero league is a lot like trench warfare -- you don't want to be there."
-                      ,{tts:true});
-    }
-    if (command === 'valeera') {
-        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence."
                       ,{tts:true});
     }
     
