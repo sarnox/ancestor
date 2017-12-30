@@ -6,7 +6,7 @@ client.on('ready', () => {
     //client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
-var narratorstr = [
+const narratorstr = [
     'Our HotS team, once so well regarded, is now barely whispered aloud by the bronzers.',
     'I remember days when the team lived, and laughter could be heard from the teamspeak.',
     'Women and men; bronzies and silvers; fools and flamers. All will find their way to us now that the queue is clear.',
@@ -24,7 +24,7 @@ function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
 
-var pastaarray = [
+const pastaarray = [
     "This guy's pasta is CRAZY!",
     "My rigatoni can't win against a linguini like that.",
     "He NEEDED that alfredo to win.",
@@ -42,57 +42,74 @@ client.on('message', message => {
   
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
-
+    
     if(command === "say") {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
     }
     
-    if (message.content === '!team') {
+    if(command === "ping") {
+    const m = await message.channel.send("Ping?");
+    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
+    }
+    
+    if (command === 'team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
         message.reply(narratorstr[randomNumber],{tts:true});  
     }
-    if (command === 'test') {
-        var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        message.reply(narratorstr[randomNumber],{tts:true});  
-    }
-    if (message.content === '!pasta') {
+    if (command === 'pasta') {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
         message.reply(pastaarray[randomNumber],{tts:true}); 
     }
-    if (message.content === '!bronze') {
+    if (command === 'bronze') {
         message.reply("Some players should have never installed. You are doing just work, stomping them." 
                       ,{tts:true});
     }
-    if (message.content === '!shitters') {
+    if (command === 'shitters') {
         message.reply("Gatekeeping the shitters is an endless battle, but one that must be fought." 
                       ,{tts:true});
     }
-    if (message.content === '!pug') {
+    if (command === 'pug') {
         message.reply("Bronzers may indeed stalk these queues, but yonder – a pug playing support." 
                       ,{tts:true});
     }
-    if (message.content === '!bug') {
+    if (command === 'bug') {
         message.reply("Such queue bugs are unsurprising -- this matchmaking predates even the earliest beta testers." 
                       ,{tts:true});
     }
-    if (message.content === '!hanzo') {
+    if (command === 'hanzo') {
         message.reply("https://i.imgur.com/UwpqyMh.mp4" 
                       ,{tts:false});
     }
-    if (message.content === '!QM') {
+    if (command === 'bdo') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
+                      ,{tts:false});
+    }
+    if (command === 'triggered') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
+                      ,{tts:false});
+    }
+    if (command === 'wtf') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500239793651714/79175_original.jpg" 
+                      ,{tts:false});
+    }
+    if (command === 'qm') {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
     }
-    if (message.content === '!black') {
+    if (command === 'black') {
         message.reply("see !Kunryul");
     }
-    if (message.content === '!Kunryul') {
+    if (command === 'kunryul') {
         message.reply("see !black");
     }
-    if (message.content === '!HL') {
+    if (command === 'hl') {
         message.reply("Hero league is a lot like trench warfare -- you don't want to be there."
+                      ,{tts:true});
+    }
+    if (command === 'valeera') {
+        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence."
                       ,{tts:true});
     }
     
