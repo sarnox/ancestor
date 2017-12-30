@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('I am ready!');
+    //client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
 var narratorstr = [
@@ -33,12 +34,14 @@ var pastaarray = [
     "I cooked that al dente!"
     ];
 
-client.on('message', function(message) {
-    if (message.content === '!team') {
+const prefix = "!";
+
+client.on('message', msg => {
+    if (msg.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
         message.reply(narratorstr[randomNumber],{tts:true});  
     }
-    if (message.content === '!pasta') {
+    if (msg.content === '!pasta') {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
         message.reply(pastaarray[randomNumber],{tts:true}); 
     }
