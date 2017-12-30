@@ -1,8 +1,9 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({autoReconnect: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
+    //client.user.setGame(`on ${client.guilds.size} servers`);
 });
 
 var narratorstr = [
@@ -33,47 +34,79 @@ var pastaarray = [
     "I cooked that al dente!"
     ];
 
-client.on('message', function(message) {
-    if (message.content === '!team') {
+const prefix = "!";
+
+client.on('message', async msg => {
+    if(msg.author.bot) return;
+    if(msg.content.indexOf(prefix) !== 0) return;
+  
+    const args = msg.content.slice(prefix.length).trim().split(/ +/g);
+    const command = args.shift().toLowerCase();
+    
+    if(command === "say") {
+    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o=>{}); 
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
+    }
+    
+    if (command === 'team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
         message.reply(narratorstr[randomNumber],{tts:true});  
     }
-    if (message.content === '!pasta') {
+    if (command === 'pasta') {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
         message.reply(pastaarray[randomNumber],{tts:true}); 
     }
-    if (message.content === '!bronze') {
+    if (command === 'bronze') {
         message.reply("Some players should have never installed. You are doing just work, stomping them." 
                       ,{tts:true});
     }
-    if (message.content === '!shitters') {
+    if (command === 'shitters') {
         message.reply("Gatekeeping the shitters is an endless battle, but one that must be fought." 
                       ,{tts:true});
     }
-    if (message.content === '!pug') {
+    if (command === 'pug') {
         message.reply("Bronzers may indeed stalk these queues, but yonder – a pug playing support." 
                       ,{tts:true});
     }
-    if (message.content === '!bug') {
+    if (command === 'bug') {
         message.reply("Such queue bugs are unsurprising -- this matchmaking predates even the earliest beta testers." 
                       ,{tts:true});
     }
-    if (message.content === '!hanzo') {
+    if (command === 'hanzo') {
         message.reply("https://i.imgur.com/UwpqyMh.mp4" 
                       ,{tts:false});
     }
-    if (message.content === '!QM') {
+    if (command === 'BDO') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
+                      ,{tts:false});
+    }
+    if (command === 'triggered') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
+                      ,{tts:false});
+    }
+    if (command === 'wtf') {
+        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500239793651714/79175_original.jpg" 
+                      ,{tts:false});
+    }
+    if (command === 'qm') {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
     }
-    if (message.content === '!black') {
+    if (command === 'black') {
         message.reply("see !Kunryul");
     }
-    if (message.content === '!Kunryul') {
+    if (command === 'kunryul') {
         message.reply("see !black");
     }
-    if (message.content === '!HL') {
+    if (command === 'hl') {
         message.reply("Hero league is a lot like trench warfare -- you don't want to be there."
+                      ,{tts:true});
+    }
+    if (command === 'valeera') {
+        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence.
                       ,{tts:true});
     }
     
