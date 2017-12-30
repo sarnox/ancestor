@@ -106,7 +106,7 @@ client.on('message', async msg => {
                       ,{tts:true});
     }
     if (command === 'valeera') {
-        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence.
+        message.reply("The only thing longer than our team league queues is the duration of Valeera's silence."
                       ,{tts:true});
     }
     
