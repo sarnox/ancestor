@@ -39,11 +39,11 @@ const prefix = "!";
 client.on('message', msg => {
     if (msg.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        message.reply(narratorstr[randomNumber],{tts:true});  
+        msg.reply(narratorstr[randomNumber],{tts:true});  
     }
     if (msg.content === '!pasta') {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
-        message.reply(pastaarray[randomNumber],{tts:true}); 
+        msg.reply(pastaarray[randomNumber],{tts:true}); 
     }
     if (message.content === '!bronze') {
         message.reply("Some players should have never installed. You are doing just work, stomping them." 
