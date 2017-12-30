@@ -42,6 +42,12 @@ client.on('message', message => {
   
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
+
+    if(command === "say") {
+    const sayMessage = args.join(" ");
+    message.delete().catch(O_o=>{}); 
+    message.channel.send(sayMessage);
+    }
     
     if (message.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
