@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({autoReconnect: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -36,14 +36,14 @@ var pastaarray = [
 
 const prefix = "!";
 
-client.on('message', msg => {
-    if (msg.content === '!team') {
+client.on('message', message => {
+    if (message.content === '!team') {
         var randomNumber = Math.floor(Math.random()*narratorstr.length);
-        msg.reply(narratorstr[randomNumber],{tts:true});  
+        message.reply(narratorstr[randomNumber],{tts:true});  
     }
-    if (msg.content === '!pasta') {
+    if (message.content === '!pasta') {
         var randomNumber = Math.floor(Math.random()*pastaarray.length);
-        msg.reply(pastaarray[randomNumber],{tts:true}); 
+        message.reply(pastaarray[randomNumber],{tts:true}); 
     }
     if (message.content === '!bronze') {
         message.reply("Some players should have never installed. You are doing just work, stomping them." 
