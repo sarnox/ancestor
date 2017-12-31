@@ -3,7 +3,7 @@ const client = new Discord.Client({autoReconnect: true});
 
 client.on('ready', () => {
     console.log('I am ready!');
-    //client.user.setGame(`on ${client.guilds.size} servers`);
+    client.user.setGame('God');
 });
 
 const narratorstr = [
