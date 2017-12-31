@@ -43,10 +43,22 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
 
-    if(command === "say") {
+    if(command === 'say') {
     const sayMessage = args.join(" ");
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
+    }
+    
+    if (command === 'join') {
+        if (message.member.voiceChannel) {
+          message.member.voiceChannel.join()
+            .then(connection => { // Connection is an instance of VoiceConnection
+              message.reply("I'm in!");
+            })
+            .catch(console.log);
+        } else {
+          message.reply('Nope!');
+        }
     }
     
     if (command === 'team') {
