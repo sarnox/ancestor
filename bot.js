@@ -92,6 +92,8 @@ client.on('message', message => {
     if (command === 'bdo') {
         message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
                       ,{tts:false});
+        message.reply("https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
+                      ,{tts:false});
     }
     if (command === 'triggered') {
         message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
