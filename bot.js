@@ -20,6 +20,20 @@ const narratorstr = [
     'I can still see their angry faces as they stormed the skype group, but the team was dead before they found me, and the meems were on their way.',
     ];
 
+const bdoarray = [
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
+    ];
+
+
 function rng(low, high) {
     return Math.random() * (high - low) + low;
 };
@@ -90,10 +104,8 @@ client.on('message', message => {
                       ,{tts:false});
     }
     if (command === 'bdo') {
-        message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png" 
-                      ,{tts:false});
-        message.reply("https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
-                      ,{tts:false});
+        var randomNumber = Math.floor(Math.random()*bdoarray.length);
+        message.reply(bdoarray[randomNumber],{tts:false});  
     }
     if (command === 'triggered') {
         message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500175427993600/Triggered.jpg" 
