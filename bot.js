@@ -21,15 +21,15 @@ const narratorstr = [
     ];
 
 const bdoarray = [
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
     ];
 
