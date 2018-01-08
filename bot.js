@@ -27,9 +27,6 @@ const bdoarray = [
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
     ];
 
@@ -101,6 +98,10 @@ client.on('message', message => {
     }
     if (command === 'hanzo') {
         message.reply("https://i.imgur.com/UwpqyMh.mp4"
+                      ,{tts:false});
+    }
+    if (command === 'praise') {
+        message.reply("https://cdn.discordapp.com/attachments/199020940431065089/399767034424066049/Praise.jpg"
                       ,{tts:false});
     }
     if (command === 'potato') {
