@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const os = require('os');
 const client = new Discord.Client({autoReconnect: true});
 
 client.on('ready', () => {
@@ -138,6 +139,16 @@ client.on('message', message => {
         message.reply("The only thing longer than our team league queues is the duration of Valeera's silence."
                       ,{tts:true});
     }
+    if (command === 'rank') {
+        message.reply("Welcome to master league, where the matchmaking is a joke and your rank doesn't matter."
+                      ,{tts:true});
+    }
+    if (command === 'red') {
+        message.reply("Roses are red, and the new patch makes me nervous." + os.EOL +
+                      "A player you were matched with has left the game or disconnected from the service."
+                      ,{tts:true});
+    }
+    
     
 });
 
