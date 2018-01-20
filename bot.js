@@ -121,6 +121,10 @@ client.on('message', message => {
         message.reply("https://cdn.discordapp.com/attachments/391034539159453696/396500239793651714/79175_original.jpg" 
                       ,{tts:false});
     }
+    if (command === 'wow') {
+        message.reply("https://i.imgur.com/znL8B0N.png" 
+                      ,{tts:false});
+    }
     if (command === 'qm') {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
