@@ -17,8 +17,9 @@ const narratorstr = [
     'In time, you will know the tragic extent of my HotS team...',
     'An eternity of futile queue times -- a penance for my unspeakable retirement.',
     'Curiosity, interest and overwatch heroes -- mile markers on my road to damnation.',
-    "In truth I cannot tell how much time has passed since I've been queuing for team league.",
+    'In truth I cannot tell how much time has passed since I have been queuing for team league.',
     'I can still see their angry faces as they stormed the skype group, but the team was dead before they found me, and the meems were on their way.',
+    ''
     ];
 
 const bdoarray = [
@@ -28,7 +29,8 @@ const bdoarray = [
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg" 
+    "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg",
+    ""
     ];
 
 
