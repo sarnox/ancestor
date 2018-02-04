@@ -18,19 +18,17 @@ const narratorstr = [
     'An eternity of futile queue times -- a penance for my unspeakable retirement.',
     'Curiosity, interest and overwatch heroes -- mile markers on my road to damnation.',
     'In truth I cannot tell how much time has passed since I have been queuing for team league.',
-    'I can still see their angry faces as they stormed the skype group, but the team was dead before they found me, and the meems were on their way.',
-    ''
+    'I can still see their angry faces as they stormed the skype group, but the team was dead before they found me, and the meems were on their way.'
     ];
 
 const bdoarray = [
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
-    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
     "https://cdn.discordapp.com/attachments/297410073448284165/397509790995054614/lul.jpg",
-    ""
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png",
+    "https://cdn.discordapp.com/attachments/391034539159453696/396500124379119636/memes_transparency.png"
     ];
 
 
@@ -153,6 +151,10 @@ client.on('message', message => {
         message.reply("Roses are red, and the new patch makes me nervous." + os.EOL +
                       "A player you were matched with has left the game or disconnected from the service."
                       ,{tts:true});
+    }
+    if (command === 'help') {
+        message.reply("team, pasta, bronze, shitters, pug, bug, hanzo, praise, potato, bdo, triggered, wtf, wow, qm, black, kunryul, hl, valeera, rank, red"
+                      ,{tts:false});
     }
     
     
