@@ -109,6 +109,10 @@ client.on('message', message => {
         message.reply("https://media0.giphy.com/media/uWD6b6JuqCxaw/giphy.gif"
                       ,{tts:false});
     }
+    if (command === 'malf') {
+        message.reply("https://i.imgur.com/JY8gzja.gif"
+                      ,{tts:false});
+    }
     if (command === 'bdo') {
         var randomNumber = Math.floor(Math.random()*bdoarray.length);
         message.reply(bdoarray[randomNumber],{tts:false});  
