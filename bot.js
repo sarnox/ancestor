@@ -129,6 +129,10 @@ client.on('message', message => {
         message.reply("https://i.imgur.com/znL8B0N.png" 
                       ,{tts:false});
     }
+    if (command === 'nox') {
+        message.reply("https://i.imgur.com/BpRDYCM.png" 
+                      ,{tts:false});
+    }
     if (command === 'qm') {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
