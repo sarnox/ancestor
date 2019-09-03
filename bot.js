@@ -129,6 +129,10 @@ client.on('message', message => {
         message.reply("https://i.imgur.com/znL8B0N.png" 
                       ,{tts:false});
     }
+    if (command === 'no') {
+        message.reply("https://www.youtube.com/watch?v=zSXV0KR4PWY" 
+                      ,{tts:false});
+    }
     if (command === 'nox') {
         message.reply("https://i.imgur.com/BpRDYCM.png" 
                       ,{tts:false});
@@ -137,8 +141,13 @@ client.on('message', message => {
         message.reply("You remember our venerable quick match... it is a festering abomination! I beg you, turn back now, and save yourselves from the ravenous shadows of... the darkest quickmatch." 
                       ,{tts:true});
     }
+    if (command === 'kouto') {
+        message.reply("https://cdn.discordapp.com/attachments/520680490986897428/543500652769181719/unknown.png" 
+                      ,{tts:false});
+    }
     if (command === 'black') {
-        message.reply("see !Kunryul");
+        message.reply("https://media.discordapp.net/attachments/520680442060341248/618041673930244100/Untitled.png" 
+                      ,{tts:false});
     }
     if (command === 'kunryul') {
         message.reply("see !black");
@@ -161,7 +170,7 @@ client.on('message', message => {
                       ,{tts:true});
     }
     if (command === 'help') {
-        message.reply("team, pasta, bronze, shitters, pug, bug, hanzo, praise, potato, bdo, triggered, wtf, wow, qm, black, kunryul, hl, valeera, rank, red"
+        message.reply("team, pasta, bronze, shitters, pug, bug, hanzo, praise, potato, bdo, triggered, wtf, wow, qm, black, kunryul, hl, valeera, rank, red, kouto"
                       ,{tts:false});
     }
     
