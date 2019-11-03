@@ -169,8 +169,16 @@ client.on('message', message => {
                       "A player you were matched with has left the game or disconnected from the service."
                       ,{tts:true});
     }
+    if (command === 'bruh') {
+        message.reply("https://cdn.discordapp.com/attachments/520680442060341248/640259076172939304/unknown.png" 
+                      ,{tts:false});
+    }
+    if (command === 'train') {
+        message.reply("https://i.imgur.com/vNmrkCs.png" 
+                      ,{tts:false});
+    }
     if (command === 'help') {
-        message.reply("team, pasta, bronze, shitters, pug, bug, hanzo, praise, potato, bdo, triggered, wtf, wow, qm, black, kunryul, hl, valeera, rank, red, kouto"
+        message.reply("team, pasta, bronze, shitters, pug, bug, hanzo, praise, potato, bdo, triggered, wtf, wow, qm, black, kunryul, hl, valeera, rank, red, kouto, train, bruh"
                       ,{tts:false});
     }
     
